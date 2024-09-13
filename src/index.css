@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@font-face {
+  font-family: 'Kumbh Sans';
+  src: url(../static/KumbhSans-Bold.ttf);
+}
+@font-face {
+  font-family: 'Kumbh Sans';
+  src: url(../static/KumbhSans-Regular.ttf);
+}
+
