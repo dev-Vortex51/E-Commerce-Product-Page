@@ -7,10 +7,10 @@
 
 @font-face {
   font-family: 'Kumbh Sans';
-  src: url(../static/KumbhSans-Bold.ttf);
+  src: url(/KumbhSans-Bold.ttf);
 }
 @font-face {
   font-family: 'Kumbh Sans';
-  src: url(../static/KumbhSans-Regular.ttf);
+  src: url(/KumbhSans-Regular.ttf);
 }
 

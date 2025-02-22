@@ -12,7 +12,7 @@ function Cart({ isOpen, quantity, product, isEmpty, setQuantity,setIsEmpty }) {
       </div>
       {isEmpty || quantity===0 && deleted ? <p className='font-semibold tracking-widest w-full mt-16 mx-20'>Your Cart is Empty</p> : <div className='flex flex-col items-center gap-6'>
         <div className='flex items-center gap-2 mt-6 justify-center'>
-          <img src={`../images/image-product-${product.currImage}.jpg`} alt="" className='w-14 rounded-md object-cover'/>
+          <img src={`/image-product-${product.currImage}.jpg`} alt="" className='w-14 rounded-md object-cover'/>
           
           <div className=' text-sm text-darkGrayishBlue'>
           <p className='font-semibold'>Fall Limited Edition Sneakers</p>
@@ -21,7 +21,7 @@ function Cart({ isOpen, quantity, product, isEmpty, setQuantity,setIsEmpty }) {
             <p className='font-bold text-veryDarkBlue'>{formatCurrency(product.price * quantity)}</p>
             </div>
           </div>
-          <img src="../images/icon-delete.svg" alt="" className='cursor-pointer' onClick={() => {
+          <img src="/icon-delete.svg" alt="" className='cursor-pointer' onClick={() => {
             setDeleted(true)
             setQuantity(0)
             setIsEmpty(true)

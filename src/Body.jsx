@@ -36,22 +36,22 @@ export default function Body({ isOpen,quantity,setQuantity }) {
 
         <div className='flex flex-col items-center  gap-4'>
         <div className='w-full  md:w-96 h-64 md:h-80 '>
-          <img src={`../images/image-product-${currImage}.jpg`} alt="" className='w-full h-full md:rounded-2xl object-cover' onClick={()=> setModal(true)} />
+          <img src={`/image-product-${currImage}.jpg`} alt="" className='w-full h-full md:rounded-2xl object-cover' onClick={()=> setModal(true)} />
           </div>
           <div className='hidden md:flex items-center gap-3'>
-            <img src="./images/image-product-1-thumbnail.jpg" alt="" className={`${active === 'image-1' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`} onClick={() => {
+            <img src="/image-product-1-thumbnail.jpg" alt="" className={`${active === 'image-1' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`} onClick={() => {
               setCurrImage(1)
               handleActive('image-1')
             }}/>
-            <img src="./images/image-product-2-thumbnail.jpg" alt="" className={`${active === 'image-2' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`}  onClick={() => {
+            <img src="/image-product-2-thumbnail.jpg" alt="" className={`${active === 'image-2' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`}  onClick={() => {
               setCurrImage(2)
               handleActive('image-2')
             }}/>
-            <img src="./images/image-product-3-thumbnail.jpg" alt="" className={`${active === 'image-3' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`}  onClick={() => {
+            <img src="/image-product-3-thumbnail.jpg" alt="" className={`${active === 'image-3' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`}  onClick={() => {
               setCurrImage(3)
               handleActive('image-3')
             }}/>
-            <img src="./images/image-product-4-thumbnail.jpg" alt="" className={`${active === 'image-4' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`}  onClick={() => {
+            <img src="/image-product-4-thumbnail.jpg" alt="" className={`${active === 'image-4' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`}  onClick={() => {
               setCurrImage(4)
               handleActive('image-4')
             }}/>
@@ -70,12 +70,12 @@ export default function Body({ isOpen,quantity,setQuantity }) {
         </div>
         <div className='flex flex-col md:flex-row w-full items-center gap-2'>
           <button className='flex items-center w-full gap-6 bg-lightGrayishBlue justify-between py-3 px-6 rounded-xl'>
-              <img src="../images/icon-plus.svg" alt="" onClick={() => {
+              <img src="/icon-plus.svg" alt="" onClick={() => {
                 setQuantity(quantity => quantity + 1)
                 quantity === 0 && setIsEmpty(true)
             }}/>
               <span className='font-semibold text-lg text-veryDarkBlue'>{ quantity}</span>
-              <img src="../images/icon-minus.svg" alt="" onClick={() => {
+              <img src="/icon-minus.svg" alt="" onClick={() => {
                 quantity >= 1 && setQuantity(quantity => quantity - 1)
               
               }} />
@@ -102,22 +102,22 @@ export default function Body({ isOpen,quantity,setQuantity }) {
       
       <div className='flex flex-col items-center  gap-4 '>
         <div className='w-full  md:w-96 h-64 md:h-80 '>
-          <img src={`../images/image-product-${currImage}.jpg`} alt="" className='w-full h-full md:rounded-2xl object-cover' />
+          <img src={`/image-product-${currImage}.jpg`} alt="" className='w-full h-full md:rounded-2xl object-cover' />
           </div>
           <div className='hidden md:flex items-center gap-3'>
-            <img src="./images/image-product-1-thumbnail.jpg" alt="" className={`${active === 'image-1' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`} onClick={() => {
+            <img src="/image-product-1-thumbnail.jpg" alt="" className={`${active === 'image-1' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`} onClick={() => {
               setCurrImage(1)
               handleActive('image-1')
             }}/>
-            <img src="./images/image-product-2-thumbnail.jpg" alt="" className={`${active === 'image-2' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`}  onClick={() => {
+            <img src="/image-product-2-thumbnail.jpg" alt="" className={`${active === 'image-2' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`}  onClick={() => {
               setCurrImage(2)
               handleActive('image-2')
             }}/>
-            <img src="./images/image-product-3-thumbnail.jpg" alt="" className={`${active === 'image-3' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`}  onClick={() => {
+            <img src="/image-product-3-thumbnail.jpg" alt="" className={`${active === 'image-3' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`}  onClick={() => {
               setCurrImage(3)
               handleActive('image-3')
             }}/>
-            <img src="./images/image-product-4-thumbnail.jpg" alt="" className={`${active === 'image-4' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`}  onClick={() => {
+            <img src="/image-product-4-thumbnail.jpg" alt="" className={`${active === 'image-4' && 'opacity-55 border-2 border-Orange'}   w-20 rounded-xl cursor-pointer`}  onClick={() => {
               setCurrImage(4)
               handleActive('image-4')
             }}/>
